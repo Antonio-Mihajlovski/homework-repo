@@ -1,7 +1,8 @@
 let phone = 119.95 ;
+let phoneNumber = prompt("One phone costs 119.95$");
 let taxRate ;
+let danok = 0.05;
 let calculatedPrice ;
-calculatedPrice = phone * 30 ;
-taxRate = calculatedPrice * 0.05 ;
+taxRate = phone * danok ;
+calculatedPrice = taxRate * phoneNumber;
 console.log (calculatedPrice);
-console.log (taxRate);
