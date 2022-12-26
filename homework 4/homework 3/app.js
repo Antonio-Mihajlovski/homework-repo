@@ -1,6 +1,10 @@
 let array = ["Zdravo", "Jas" , "Sum", "Antonio"];
-function strings(){
-    console.log(`"${array[0]} ${array[1]} ${array[2]} ${array[3]}"`);
+function strings(arr){
+    let result = [];
+    for (let i = 0;i < array.length;i++){
+        result += arr[i]
+    }
+    console.log(result);
 }
 strings(array);
 
