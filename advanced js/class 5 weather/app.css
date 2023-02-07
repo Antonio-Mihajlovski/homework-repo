@@ -1,0 +1,58 @@
+/* Classes: main
+current
+daily
+hourly-el*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.main {
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+.current {
+    width: 100%;
+    min-height: 250px;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.daily {
+    width: 50%;
+    min-height: 250px;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 20px;
+    background-color:  lightcoral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.hourly{
+    width: 40%;
+    min-height: 250px;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
