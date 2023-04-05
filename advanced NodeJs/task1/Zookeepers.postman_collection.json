@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "0550f554-052e-403b-be2a-acac277e06d2",
+		"name": "Zookeepers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add zookeepers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n  \"name\": \"Jane Doe\",\r\n  \"age\": 23,\r\n  \"location\": \"Skopje\",\r\n  \"isActive\": true\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/zookeepers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"zookeepers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update zookeepers",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n  \"name\": \"Jane Doe\",\r\n  \"age\": 23,\r\n  \"location\": \"Kumanovo\",\r\n  \"isActive\": true\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/zookeepers/642d7dc7e899d6adcecf9250",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"zookeepers",
+						"642d7dc7e899d6adcecf9250"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete zookeeper",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/zookeepers/642d7c0ae899d6adcecf924f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"zookeepers",
+						"642d7c0ae899d6adcecf924f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all zookeepers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/zookeepers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"zookeepers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
