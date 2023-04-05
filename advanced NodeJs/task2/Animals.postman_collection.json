@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "d351ebf6-3e14-4600-ac41-daaea96adfbe",
+		"name": "Animals",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all animals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/animals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Animals",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/animals/642d86f7a2a6e8b7c4370eb2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animals",
+						"642d86f7a2a6e8b7c4370eb2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new animal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Blacky\",\r\n  \"type\": \"Bear\",\r\n  \"age\": 3,\r\n  \"location\": \"Belgrade\",\r\n  \"gender\": \"M\",\r\n  \"characteristics\": {\r\n    \"food\": [\"honey\", \"apple\", \"watermelon\", \"cucumber\"],\r\n    \"colour\": \"black\",\r\n    \"isDangerous\": true,\r\n    \"weight\": 250,\r\n    \"enclosure\": \"mountain\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/animals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update animal",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"ASd\",\r\n  \"type\": \"Bedasdar\",\r\n  \"age\": 3,\r\n  \"location\": \"Belgrade\",\r\n  \"gender\": \"M\",\r\n  \"characteristics\": {\r\n    \"food\": [\"honey\", \"apple\", \"watermelon\", \"cucumber\"],\r\n    \"colour\": \"black\",\r\n    \"isDangerous\": true,\r\n    \"weight\": 250,\r\n    \"enclosure\": \"mountain\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/animals/642d86f7a2a6e8b7c4370eb2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"animals",
+						"642d86f7a2a6e8b7c4370eb2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
