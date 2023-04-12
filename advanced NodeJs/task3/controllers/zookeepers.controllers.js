@@ -1,14 +1,6 @@
 import ZookeeperService from "../services/zookeepers.service.js"
 
 export default class ZookeeperController {
-    static async addZookeepers(req, res) {
-        try {
-            const zookeeper = await ZookeeperService.addZookeeper(req.body);
-            res.status(200).send(zookeeper)
-        } catch (error) {
-            res.status(500).send(error)
-        }
-    }
     static async getAllZookeepers(req, res) {
         try {
             const zookeepers = await ZookeeperService.getAllZookeepers();
@@ -17,6 +9,16 @@ export default class ZookeeperController {
             res.status(500).send(error)
         }
     }
+    
+    static async addZookeepers(req, res) {
+        try {
+            const zookeeper = await ZookeeperService.addZookeepers(req.body);
+            res.status(200).send(zookeeper)
+        } catch (error) {
+            res.status(500).send(error)
+        }
+    }
+
     static async updateZookeeperInfo(req, res) {
         try {
             const updateZookeepersInfo = await ZookeeperService.updateZookeeperInfo(req.params.id, req.body)

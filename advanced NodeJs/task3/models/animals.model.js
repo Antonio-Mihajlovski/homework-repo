@@ -16,33 +16,31 @@ const animalsSchema = new Schema({
     },
     gender: {
         type: String,
-        M: ["Select M if u are male"],
-        M: ["Select F if u are female"]
+        required: true,
+        enum: [ "M", "F", `Select M for Male or F for Female`]
     },
     characteristics: {
-        type: Object,
-        required: true,
-        food: {
-            type: String,
-            required: false
+        type: {
+            food: {
+                type: String
+            },
+            colour: {
+                type: String
+            },
+            isDangerous: {
+                type: Boolean,
+                default: false
+            },
+            weight: {
+                type: Number,
+                min: [0, "Weight cannot be a negative number"]
+            },
+            enclosure: {
+                type: String,
+                required: true
+            }
         },
-        colour: {
-            type: String,
-            required: false
-        },
-        isDangerous: {
-            type: Boolean,
-            required: false
-        },
-        weight: {
-            type: Number,
-            required: false,
-            min: [0, "Age cannot be a negative number"]
-        },
-        enclosure: {
-            type: String,
-            required: true
-        }
+        required: true
     }
 })
 

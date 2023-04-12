@@ -3,9 +3,11 @@ import Zookeepers from "../models/zookeepers.model.js"
 export default class ZookeeperService {
     static async getAllZookeepers() {
         const zookeepers = await Zookeepers.find({})
+
         return zookeepers
     }
-    static async addZookeeper(zookeeperData) {
+    
+    static async addZookeepers(zookeeperData) {
         const zookeeper = new Zookeepers(zookeeperData)
         const newZookeeper = await zookeeper.save()
         return newZookeeper

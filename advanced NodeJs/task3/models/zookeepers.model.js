@@ -17,9 +17,10 @@ const zookeepersSchema = new Schema({
         required: true
     },
     isActive: {
+        type: Boolean
     }
 })
 
-const Zookeepers = model("Zookeepers", zookeepersSchema);
+const Zookeepers = model("Zookeeper", zookeepersSchema);
 
 export default Zookeepers;

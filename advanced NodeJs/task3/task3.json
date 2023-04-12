@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "b4d027fd-5031-496c-ac16-a631f1810236",
+		"name": "task3 Combined with mongoose",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Zookeepers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/zoo/zookeepers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zoo",
+						"zookeepers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add zookeeper",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"name\": \"Jane Doe\",\r\n        \"age\": 25,\r\n        \"location\": \"kumanovo\",\r\n        \"isActive\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/zoo/zookeepers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zoo",
+						"zookeepers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update zookeepers",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"name\": \"John Doe\",\r\n        \"age\": 23,\r\n        \"location\": \"Skopje\",\r\n        \"isActive\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/zoo/zookeepers/64340ed648fa2af6a4e321bf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zoo",
+						"zookeepers",
+						"64340ed648fa2af6a4e321bf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete zookeeper",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/zoo/zookeepers/64340ed648fa2af6a4e321bf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zoo",
+						"zookeepers",
+						"64340ed648fa2af6a4e321bf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add animal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"name\": \"Harambe\",\r\n        \"age\": 25,\r\n        \"location\": \"kumanovo\",\r\n        \"gender\": \"M\",\r\n        \"characteristics\": {\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/zoo/animals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zoo",
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all animals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/zoo/animals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zoo",
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update animals",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Harambe\",\r\n        \"age\": 25,\r\n        \"location\": \"asdas\",\r\n        \"gender\": \"M\",\r\n        \"characteristics\": {\r\n            \"enclosure\": \"Kumanovo zoo\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/zoo/animals/64368aef747c18585c97595f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zoo",
+						"animals",
+						"64368aef747c18585c97595f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete animal",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/zoo/animals/64368a7d747c18585c975951",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zoo",
+						"animals",
+						"64368a7d747c18585c975951"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
